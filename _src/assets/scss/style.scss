@@ -474,6 +474,9 @@ a:-webkit-any-link {
         margin-top: 45px;
         margin-bottom: 30px;
     }
+    .aside_style .container{
+        margin: 45px;
+    }
     .profile_container {
         display: flex;
         align-items: flex-start;
@@ -544,6 +547,10 @@ a:-webkit-any-link {
         font-size: 24px;
         font-family: 'OpenSans-SemiBold', sans-serif;
         line-height: 30px;
+    }
+    .aside_style .container{
+        width: 924px;
+        margin: auto;
     }
     .profile_info {
         margin-left: 45px;
