@@ -599,7 +599,14 @@ a:-webkit-any-link {
         background: pink;
     }
     .contact_container{
+        display: flex;
+        flex-direction: column;
         text-align: center;
+        margin: 30px 15px;
+    }
+    .contact_container .title_team{
+        margin: 0;
+        margin-bottom: 15px;
     }
     .form{
         display: flex;
