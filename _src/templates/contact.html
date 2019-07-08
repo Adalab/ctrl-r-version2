@@ -27,7 +27,7 @@
   </head>
 
   <body class="contact-page">
-    <partial src="_hero.html" wrapperClass="no-claim"></partial>
+    <partial src="_hero.html" wrapperClass="hero_contact"></partial>
     <main class="contact_container">
       <h2 class="title_team">CONTACT</h2>
       <p class="text_contact">
@@ -36,16 +36,16 @@
         exercitationem dignissimos voluptatibus quas impedit officiis,
         reprehenderit hic laudantium sunt quam.
       </p>
-      <p>All fields marked with an * are required.</p>
-      <form class="form" action="" method="POST">
-        <label for="fullname">Full name *</label>
+      <p>All fields marked with an <span class="star">*</span> are required.</p>
+      <form class="form" action="https://formspree.io/sandracuberor@gmail.com" method="POST">
+        <label for="fullname">Full name <span class="star">*</span></label>
         <input
           type="text"
           id="fullname"
           name="fullname"
           placeholder="Name..."
         />
-        <label for="email">Email *</label>
+        <label for="email">Email <span class="star">*</span></label>
         <input
           type="email"
           name="email"
@@ -54,7 +54,7 @@
         />
         <label for="phone">Phone number</label>
         <input type="tel" name="phone" id="phone" placeholder="Ex:123456789" />
-        <label for="message">Message *</label>
+        <label for="message">Message <span class="star">*</span></label>
         <textarea
           name="message"
           id="message"
@@ -62,7 +62,7 @@
           rows="10"
           placeholder="What do you need?"
         ></textarea>
-        <button type="submit">SEND</button>
+        <button class="button" type="submit">SEND</button>
       </form>
     </main>
     <partial src="_footer.html"></partial>

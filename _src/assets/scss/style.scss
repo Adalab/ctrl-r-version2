@@ -591,10 +591,10 @@ a:-webkit-any-link {
 }
 // Pagina contacto
 
-.hero.no-claim{
-    background:rgba(189,229,229,1);
+.hero.hero_contact{
+  background:rgba(189,229,229,1);
 }
-.no-claim .claim__container {
+.hero_contact .claim__container{
   display: none;
 }
 .contact_container {
@@ -611,4 +611,12 @@ a:-webkit-any-link {
   display: flex;
   flex-direction: column;
   text-align: left;
+}
+.button{
+  background-color: #099d8d;
+  height: 45px;
+  color: #ffffff;
+}
+.star{
+  color: #14d9c4;
 }
