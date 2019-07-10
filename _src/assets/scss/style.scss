@@ -96,6 +96,11 @@ body {
   font-size: medium;
   color: white;
   list-style-type: none;
+  transition: 1s;
+}
+.menu_element:hover{
+    color: #3BDAC7;
+    transform: scale(1.1);
 }
 
 .link_m {
@@ -268,6 +273,17 @@ a traducir en ingles next
   color: #099d8d;
   margin-top: 0;
   margin-bottom: 0;
+  transition: 1s;
+}
+
+
+.fas:hover{
+  color:  #3BDAC7;
+  transform: scale(1.5);
+}
+.fab:hover{
+  color: #3BDAC7;
+  transform: scale(1.5);
 }
 
 .point {
@@ -286,6 +302,7 @@ a:-webkit-any-link {
   text-decoration: none;
   list-style-type: none;
 }
+
 
 .socialMedia {
   display: flex;
@@ -318,6 +335,13 @@ a:-webkit-any-link {
   border-radius: 20px;
   border: 5px solid #e3e3ec;
   margin-bottom: 15px;
+  transition: 1s;
+}
+
+.profile_picture:hover{
+  border-radius: 200px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  transform: scale(1.03);
 }
 
 .laurap {
@@ -362,7 +386,13 @@ a:-webkit-any-link {
   font-weight: 600;
   font-size: 14px;
   text-decoration: none;
+  transition: 1s;
 }
+ .element_footer .link:hover{
+  color:#3BDAC7;
+  font-size: 15px;
+ }
+
 
 .footer_team {
   display: flex;
