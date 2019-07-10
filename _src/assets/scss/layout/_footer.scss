@@ -1,3 +1,4 @@
+    @import 'core/variables';
     * {
         box-sizing: border-box;
     }
@@ -6,8 +7,6 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 70px 60px 120px;
-        border-top: #54585a solid 1px;
-        margin: 0 15px;
     }
     
     .footer_item {
@@ -29,9 +28,14 @@
         line-height: 2;
         font-weight: 600;
         font-size: 14px;
+        font-family: $fontsecond;
         display: grid;
         justify-content: center;
         align-items: center;
+        &:hover {
+            color: #3BDAC7;
+            font-size: 15px;
+        }
     }
     
     .menu_footer {
