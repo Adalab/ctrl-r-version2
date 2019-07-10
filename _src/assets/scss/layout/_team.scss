@@ -1,0 +1,115 @@
+@import "core/mixins";
+.team_container {
+  text-align: center;
+  margin: 30px 0;
+  @media all and (min-width: 768px) {
+    margin: 45px;
+    margin-bottom: 30px;
+  }
+}
+.title_team {
+  @include titleGreen();
+  @media all and (min-width: 768px) {
+    margin: 45px;
+    padding-top: 0px;
+  }
+
+  @media all and (min-width: 1200px) {
+    margin: 45px;
+  }
+}
+.text_team {
+  color: $colorsecond;
+  font-family: $fontsecond;
+  font-size: $sizetext;
+  line-height: 24px;
+  margin: 0;
+  padding-top: 15px;
+  @media all and (min-width: 768px) {
+    padding-top: 15px;
+  }
+}
+
+.link_team {
+  position: relative;
+  top: -100px;
+  @media all and (min-width: 1200px) {
+    position: relative;
+    top: -80px;
+  }
+}
+
+.square_container {
+  position: relative;
+  top: 15px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  transform: rotate(45deg);
+}
+
+.square {
+  background-color: $colorwhite;
+  width: 30px;
+  height: 30px;
+}
+
+.aside_style {
+  background: rgba(184, 184, 185, 0.5);
+  /*para meter un fondo con opacidad solo vale con rgba y no altera el texto encima*/
+  padding-bottom: 20px;
+  padding-top: 35px;
+  @media all and (min-width: 768px) {
+    padding-bottom: 60px;
+    padding-top: 45px;
+  }
+
+  .container {
+    @media all and (min-width: 768px) {
+      margin: 45px;
+      display: flex;
+      flex-wrap: nowrap;
+    }
+    @media all and (min-width: 1200px) {
+      width: 924px;
+      margin: auto;
+    }
+  }
+}
+.strength_container,
+.weakness_container {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.strength_container {
+  @media all and (min-width: 768px) {
+    margin-right: 15px;
+    display: inline-block;
+    width: 50%;
+    padding-top: 15px;
+  }
+}
+.weakness_container {
+  @media all and (min-width: 768px) {
+    margin-left: 15px;
+    display: inline-block;
+    width: 50%;
+    padding-top: 15px;
+  }
+}
+
+.container_sw {
+  margin-top: 10%;
+  /* padding-bottom: 5%; */
+}
+
+.title_sw {
+  color: $colortext;
+  font-family: "Rubik-medium", sans-serif;
+  font-size: 22px;
+  line-height: 45px;
+}
