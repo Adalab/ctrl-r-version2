@@ -626,7 +626,11 @@ a:-webkit-any-link {
     color: #ffffff;
     margin-top: 15px;
 }
+.text_field{
+    color: #54585a;
+    font-size: 12px;
 
+}
 .star {
     color: #14d9c4;
 }
@@ -660,9 +664,16 @@ a:-webkit-any-link {
         width: 206px;
         align-self: flex-end;
     }
+    .contact_container{
+    margin-right: 0;
+    margin-left: 0;
+    }
 }
 
 @media all and (min-width: 1200px) {
+    .hero.hero_contact {
+        height: 400px;
+    }
     .contact_container {
         width: 601px;
         max-width: 601px;
