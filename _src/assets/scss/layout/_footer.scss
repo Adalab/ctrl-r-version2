@@ -1,13 +1,11 @@
-@import 'core/variables';
 * {
     box-sizing: border-box;
 }
 
 .footer_container {
-    width: 100vw;
     display: grid;
-    grid-template-columns: 100vw;
-    grid-template-rows: 70px 60px 120px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 80px 120px;
 }
 
 .footer_item {
@@ -48,30 +46,27 @@
     .footer_container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 60px 120px;
-        padding: 0 45px;
+        grid-template-rows: 60px 110px;
+        padding: 0 45px 0 45px;
     }
     .footer_logo {
         grid-row: 2/3;
         padding-bottom: 60px;
         width: 115.9px;
     }
-    .footer_team {
-        grid-row: span 2;
-        width: 100px;
-        justify-self: right;
-        justify-content: right;
-    }
     .copy {
         width: 90px;
         padding-top: 30px;
     }
+    .footer_team {
+        justify-content: right;
+        padding-top: 24px;
+    }
+    .menu_footer .link {
+        justify-content: right;
+    }
     .footer_item.copy,
     .footer_item.footer_logo {
         align-items: flex-start;
-    }
-    .menu_footer .link {
-        display: grid;
-        justify-content: right;
     }
 }
