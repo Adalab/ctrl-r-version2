@@ -1,22 +1,49 @@
-@import "core/mixins";
 .team_container {
     text-align: center;
     margin: 30px 0;
     @media all and (min-width: 768px) {
-        margin: 45px;
+        margin: 45px 0 15px 0;
+        ;
         margin-bottom: 30px;
     }
 }
 
+.team_container {
+    text-align: center;
+    margin: 30px 0;
+}
+
 .title_team {
-    @include titleGreen();
-    @media all and (min-width: 768px) {
-        margin: 45px;
-        padding-top: 0px;
+    color: $colorlight;
+    font-size: 24px;
+    line-height: 45px;
+    font-family: $fontprincipal;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    @media all and(min-width: 768px) {
+        padding-top: 45px;
     }
-    @media all and (min-width: 1200px) {
-        margin: 45px;
-    }
+}
+
+.square_container {
+    position: relative;
+    top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: rotate(45deg);
+}
+
+.square {
+    background-color: $colorwhite;
+    width: 30px;
+    height: 30px;
+}
+
+.container_sw {
+    margin-top: 10%;
+    /* padding-bottom: 5%; */
 }
 
 .text_team {
@@ -25,7 +52,6 @@
     font-size: $sizetext;
     line-height: 24px;
     margin: 0;
-    padding-top: 15px;
     @media all and (min-width: 768px) {
         padding-top: 15px;
     }
@@ -40,34 +66,22 @@
     }
 }
 
-.square_container {
-    position: relative;
-    top: 15px;
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    transform: rotate(45deg);
-}
-
 .square {
     background-color: $colorwhite;
     width: 30px;
     height: 30px;
+    margin-left: calc(50% - 22.5px);
+    position: relative;
+    top: 15px;
+    transform: rotate(45deg);
 }
 
 .aside_style {
-    background: rgba(184, 184, 185, 0.5);
-    /*para meter un fondo con opacidad solo vale con rgba y no altera el texto encima*/
-    padding-bottom: 20px;
-    padding-top: 35px;
-    @media all and (min-width: 768px) {
-        padding-bottom: 60px;
-        padding-top: 45px;
-    }
+    background-color: rgba(184, 184, 185, 0.5);
+    /*
+    para meter un fondo con opacidad solo vale con rgba y no altera el texto encima*/
     .container {
         @media all and (min-width: 768px) {
-            margin: 45px;
             display: flex;
             flex-wrap: nowrap;
         }
@@ -112,7 +126,8 @@
 
 .title_sw {
     color: $colortext;
-    font-family: "Rubik-medium", sans-serif;
+    font-family: $fontprincipal;
+    font-weight: medium;
     font-size: 22px;
     line-height: 45px;
 }
