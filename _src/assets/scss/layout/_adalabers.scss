@@ -2,6 +2,7 @@
     color: $colorblack;
     font-family: $fontsecond;
     font-size: 20px;
+    padding: 0 15px 0 15px;
 }
 
 .general_container {
@@ -20,12 +21,6 @@
     /*margin:(0 15px);*/
     text-align: center;
     border-bottom: grey 0.5px solid;
-}
-
-.name_adalaber {
-    color: $colorblack;
-    font-size: 20px;
-    font-family: $fontsecond;
 }
 
 .text_team {
@@ -134,13 +129,16 @@
         vertical-align: baseline;
         padding: 0 10px;
     }
-    .aside_style {
-        padding-bottom: 60px;
-        padding-top: 45px;
-    }
     .aside_style .container {
         display: flex;
         flex-wrap: nowrap;
+        padding: 30px 15px 45px 15px;
+        @media all and (min-width: 768px) {
+            padding: 30px 45px 60px 45px;
+        }
+        @media all and (min-width:1200px) {
+            padding: 45px 138px 60px 138px;
+        }
     }
     .strength_container {
         margin-right: 15px;
@@ -177,13 +175,6 @@
         line-height: 25px;
         font-family: "Open Sans-semibold", sans-serif;
         text-align: justify;
-    }
-    .team_container {
-        margin-top: 45px;
-        margin-bottom: 30px;
-    }
-    .aside_style .container {
-        margin: 45px;
     }
     .profile_container {
         display: flex;
@@ -252,10 +243,6 @@
         font-size: 24px;
         font-family: "OpenSans-SemiBold", sans-serif;
         line-height: 30px;
-    }
-    .aside_style .container {
-        width: 924px;
-        margin: auto;
     }
     .profile_info {
         margin-left: 45px;
